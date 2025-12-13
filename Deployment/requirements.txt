@@ -1,6 +1,6 @@
-# MEDRIBA - Updated Requirements with Gemini Chatbot
+# MEDRIBA - Updated Requirements
 # Multi-Model Expert Digital Responsive Intelligent Bio-health Assistant
-# Updated for Python 3.8-3.11 compatibility + Gemini AI Integration
+# Updated for Python 3.8-3.11 compatibility
 
 # Core Framework
 streamlit>=1.28.0
@@ -26,7 +26,3 @@ joblib==1.2.0
 
 # Utilities
 Pillow>=10.0.0
-
-# NEW: Gemini AI Integration for Medical Chatbot
-google-generativeai>=0.3.0
-python-dotenv>=1.0.0
