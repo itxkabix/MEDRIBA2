@@ -533,7 +533,13 @@ class ECG:
             out_dict = {
                 'message': msg,
                 'label': label,
-                'probabilities': probs.tolist() if probs is not None else None
+                'probabilities': probs.tolist() if probs is not None else None,
+                'Information': {
+                    0: 'Abnormal Heartbeat',
+                    1: 'Myocardial Infarction',
+                    2: 'Normal',
+                    3: 'History of Myocardial Infarction'
+                }
             }
 
             if legacy_string:

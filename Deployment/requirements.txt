@@ -1,8 +1,32 @@
-scikit-learn
-scikit-image
-unzip
-joblib
-pandas
-matplotlib
-natsort
-streamlit
+# MEDRIBA - Updated Requirements with Gemini Chatbot
+# Multi-Model Expert Digital Responsive Intelligent Bio-health Assistant
+# Updated for Python 3.8-3.11 compatibility + Gemini AI Integration
+
+# Core Framework
+streamlit>=1.28.0
+streamlit-option-menu>=0.3.6
+
+# Data Science & ML
+numpy>=1.26.0
+pandas>=2.0.0
+scikit-learn==1.2.2
+xgboost>=2.0.0
+imbalanced-learn>=0.11.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
+
+# Model Interpretability
+shap>=0.43.0
+
+# Model Persistence
+joblib==1.2.0
+
+# Utilities
+Pillow>=10.0.0
+
+# NEW: Gemini AI Integration for Medical Chatbot
+google-generativeai>=0.3.0
+python-dotenv>=1.0.0
