@@ -1,7 +1,3 @@
-# Ecg.py
-# Robust ECG image -> 1D signal pipeline with diagnostics and improved fallbacks
-# Replace existing Ecg.py with this file.
-
 from skimage.io import imread
 from skimage import color
 from skimage.filters import threshold_otsu, gaussian
@@ -580,5 +576,3 @@ class ECG:
             self._log("Pipeline failed:", e)
             self._log(tb)
             raise
-
-# End of Ecg.py

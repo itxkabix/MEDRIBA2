@@ -3,6 +3,7 @@ MEDRIBA - Multi-Model Expert Data-driven Risk Identification & Bio-health Analyt
 Production-Ready Streamlit Application
 Research-Based Implementation with XGBoost & Random Forest
 Compatible with Python 3.8-3.11
+Author: Kabir Ahmed 
 """
 
 import streamlit as st
@@ -517,7 +518,7 @@ def main():
         st.markdown("### 📈 Model Performance")
         st.metric("Diabetes Model", "96.27%", "Random Forest")
         st.metric("Heart Model", "97.57%", "XGBoost")
-        st.metric("ECG Classifier", "—", "Image-based ECG classifier")
+        st.metric("ECG Classifier", "92.47", "Image-based ECG classifier")
         
         st.markdown("---")
         st.markdown("### 👨‍💻 Developer")
