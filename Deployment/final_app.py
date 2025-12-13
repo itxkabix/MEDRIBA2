@@ -135,163 +135,111 @@ st.set_page_config(
 def load_custom_css():
     st.markdown("""
     <style>
-    /* Main theme colors */
     :root {
-        --primary-color: #1e3a8a;
-        --secondary-color: #3b82f6;
-        --accent-color: #10b981;
-        --danger-color: #ef4444;
-        --bg-color: #f8fafc;
+        --primary: #0f2a44;
+        --secondary: #2563eb;
+        --accent: #14b8a6;
+        --bg: #f8fafc;
+        --text-dark: #0f172a;
+        --text-muted: #475569;
     }
-    
-    /* Hide Streamlit branding */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    
-    /* Custom header styling */
+
+    html, body, [class*="css"] {
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background-color: var(--bg);
+        color: var(--text-dark);
+    }
+
+    #MainMenu, footer {visibility: hidden;}
+
+    /* HEADER */
     .main-header {
-        background:darkblue;
-        padding: 2rem;
-        border-radius: 10px;
+        background: linear-gradient(135deg, #0f2a44, #1e40af);
+        padding: 2.5rem 2rem;
+        border-radius: 14px;
         color: white;
         text-align: center;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-bottom: 2.5rem;
+        box-shadow: 0 10px 30px rgba(15,42,68,0.25);
     }
-    
+
     .main-header h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
+        font-size: 2.8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 0.6rem;
     }
-    
+
     .main-header p {
-        font-size: 1.1rem;
-        opacity: 0.9;
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0.2rem;
     }
-    
-    /* Card styling */
+
+    /* CARDS */
     .prediction-card {
-        background: #667eea;
+        background: linear-gradient(135deg, #0f2a44, #90a0d4);
         padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-bottom: 1rem;
+        border-radius: 14px;
+        border-left: 6px solid var(--secondary);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        height: 100%;
     }
-    
-    /* Success/Warning boxes */
-    .stSuccess {
-        background-color: #d1fae5;
-        border-left: 4px solid #10b981;
-        padding: 1rem;
-        border-radius: 5px;
-    }
-    
-    .stWarning {
-        background-color: #fef3c7;
-        border-left: 4px solid #f59e0b;
-        padding: 1rem;
-        border-radius: 5px;
-    }
-    
-    .stError {
-        background-color: #fee2e2;
-        border-left: 4px solid #ef4444;
-        padding: 1rem;
-        border-radius: 5px;
-    }
-    
-    /* Button styling */
+
+    /* BUTTONS */
     .stButton>button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
         color: white;
-        border: none;
-        padding: 0.75rem 2rem;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 100%;
-    }
-    
-    .stButton>button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-    }
-    
-    /* Input styling */
-    .stTextInput>div>div>input {
-        border-radius: 8px;
-        border: 2px solid #e2e8f0;
+        border-radius: 10px;
         padding: 0.75rem;
         font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        transition: all 0.25s ease;
     }
-    
-    .stTextInput>div>div>input:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+
+    .stButton>button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(37,99,235,0.35);
     }
-    
-    /* Metric cards */
-    .metric-card {
-        background: #667eea;
-        padding: 1.5rem;
+
+    /* INFO BOXES */
+    .info-box {
+        background: #eef2ff;
+        border-left: 5px solid #2563eb;
+        padding: 1.2rem;
         border-radius: 10px;
+        margin-top: 1rem;
+        color: #1e293b;
+    }
+
+    /* METRIC CARDS */
+    .metric-card {
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+        padding: 1.6rem;
+        border-radius: 14px;
         color: white;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
-    
+
     .metric-value {
         font-size: 2rem;
-        font-weight: bold;
-        margin: 0.5rem 0;
+        font-weight: 700;
+        margin: 0.4rem 0;
     }
-    
+
     .metric-label {
         font-size: 0.9rem;
         opacity: 0.9;
     }
-    
-    /* Sidebar styling */
-    .css-1d391kg {
-        background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
+
+    /* SIDEBAR */
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #0f2a44, #1e3a8a);
+        color: white;
     }
-    
-    /* Feature importance styling */
-    .feature-box {
-        background: #f1f5f9;
-        padding: 1rem;
-        border-radius: 8px;
-        margin: 0.5rem 0;
-        border-left: 4px solid #667eea;
-    }
-    
-    /* Info boxes */
-    .info-box {
-        background: #230141;
-        border-left: 4px solid #3b82f6;
-        padding: 1rem;
-        border-radius: 5px;
-        margin: 1rem 0;
-    }
-    
-    /* Confidence gauge styling */
-    .confidence-high {
-        color: #10b981;
-        font-weight: bold;
-    }
-    
-    .confidence-medium {
-        color: #f59e0b;
-        font-weight: bold;
-    }
-    
-    .confidence-low {
-        color: #ef4444;
-        font-weight: bold;
-    }
+
     </style>
     """, unsafe_allow_html=True)
 
@@ -515,10 +463,11 @@ def create_feature_importance_chart(feature_importance, top_n=10):
 # ===========================
 def display_header():
     st.markdown("""
-    <div class="main-header">
-        <h1>⚕️ MEDRIBA</h1>
-        <p><strong> Multi-Model Expert Data-driven Risk Identification & Bio-health Analytics</strong></p>
-        <p>Research-Based AI for Diabetes & Heart Disease Prediction | Accuracy: 95-97%</p>
+    <div style='text-align: center; padding: 20px;'>
+        <h1 style='color: #1f2937; font-size: 3em;'>⚕️ MEDRIBA</h1>
+        <h3 style='color: #4b5563;'>Multi-Model Expert Data-driven Risk Identification & Bio-health Analytics</h3>
+        <p style='color: #6b7280; font-size: 1.1em;'><b>AI-Powered Disease Prediction with ECG Analysis</b></p>
+        <p style='color: #9ca3af;'>Research-Based AI for Diabetes, Heart Disease & Cardiac Condition Detection</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -649,7 +598,7 @@ def main():
             st.markdown("""
             <div class="metric-card">
                 <div class="metric-label">Multi-Disease</div>
-                <div class="metric-value">2+</div>
+                <div class="metric-value">3</div>
                 <div class="metric-label">Integrated Models</div>
             </div>
             """, unsafe_allow_html=True)
