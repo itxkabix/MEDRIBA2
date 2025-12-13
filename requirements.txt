@@ -1,30 +1,28 @@
-# ===============================
-# MEDRIBA – Streamlit Cloud SAFE
-# Python 3.10 Compatible
-# ===============================
+# MEDRIBA - Updated Requirements
+# Multi-Model Expert Digital Responsive Intelligent Bio-health Assistant
+# Updated for Python 3.8-3.11 compatibility
 
-# Core
-streamlit==1.32.0
-streamlit-option-menu==0.3.6
+# Core Framework
+streamlit>=1.28.0
+streamlit-option-menu>=0.3.6
 
-# Numeric stack (CRITICAL pinning)
-numpy==1.23.5
-scipy==1.10.1
-pandas==1.5.3
-
-# ML
+# Data Science & ML
+numpy>=1.26.0
+pandas>=2.0.0
 scikit-learn==1.2.2
-imbalanced-learn==0.11.0
-xgboost==1.7.6
+xgboost>=2.0.0
+imbalanced-learn>=0.11.0
 
 # Visualization
-matplotlib==3.7.2
-seaborn==0.12.2
-plotly==5.17.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
 
-# Explainability (SAFE)
-shap==0.41.0
+# Model Interpretability
+shap>=0.43.0
 
-# Utils
+# Model Persistence
 joblib==1.2.0
-Pillow==9.5.0
+
+# Utilities
+Pillow>=10.0.0
