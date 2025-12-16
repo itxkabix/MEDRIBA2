@@ -601,7 +601,7 @@ def main():
         st.markdown("### 📈 Model Performance")
         st.metric("Diabetes Model", "96.27%", "Random Forest")
         st.metric("Heart Model", "97.57%", "XGBoost")
-        st.metric("ECG Classifier", "—", "Image-based ECG classifier")
+        st.metric("ECG Classifier", "92.27", "Image-based ECG classifier")
         
         st.markdown("---")
         st.markdown("### 👨‍💻 Developer")
