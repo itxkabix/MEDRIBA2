@@ -1,4 +1,4 @@
-z# MEDRIBA - Multi-Model Expert Data-driven Risk Identification & Bio-health Analytics
+# MEDRIBA - Multi-Model Expert Data-driven Risk Identification & Bio-health Analytics
 
 A **production-ready, research-based AI system** for predicting multiple chronic diseases using ensemble machine learning models and advanced ECG image analysis. MEDRIBA combines clinical expertise with cutting-edge deep learning to provide accurate, interpretable disease risk assessments.
 
@@ -652,7 +652,7 @@ import plotly.graph_objects as go
 **For more information, visit the [GitHub Repository](https://github.com/itxkabix/medriba2)**
 
 
-## To un this file 
+## To Run this file 
     Do Install my repo https://github.com/itxkabix/medriba2
 
     and clone it
