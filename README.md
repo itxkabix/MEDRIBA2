@@ -650,3 +650,16 @@ import plotly.graph_objects as go
 ---
 
 **For more information, visit the [GitHub Repository](https://github.com/itxkabix/medriba2)**
+
+
+## To un this file 
+    Do Install my repo https://github.com/itxkabix/medriba2
+
+    and clone it
+    and then
+    under deployment 
+        pip install -r requirements.txt
+    
+    Runn
+
+    streamlit run med.py
