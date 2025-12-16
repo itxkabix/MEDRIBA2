@@ -1905,7 +1905,7 @@ def main():
     st.markdown("""
     <div style="text-align: center; color: #64748b; padding: 2rem;">
         <p><strong>MEDRIBA</strong> - Multi-Model Expert Data-driven Risk Identification & Bio-health Analytics</p>
-        <p>Research-Based AI Healthcare Solution | Developed by itxkabix</p>
+        <p>Research-Based AI Healthcare Solution | Developed by Kabir Ahmed</p>
         <p>⚕️ For educational and research purposes only. Always consult healthcare professionals for medical decisions.
          <a href="https://github.com/itxkabix/" target="_blank" style="color: #3b82f6; text-decoration: none;"><img src="https://img.icons8.com/ios-glyphs/24/000000/github.png" style="vertical-align:middle; margin-right:5px;">GitHub</a>
         &nbsp;&nbsp;
