@@ -49,10 +49,6 @@ The system prioritizes **clinical interpretability**, **real-time predictions**,
 - **Risk Stratification**: High/Moderate/Low risk categorization
 - **Download Capability**: Exportable reports for medical records
 
-### 🤖 AI-Powered Medical Assistant
-- **Gemini Integration**: ChatGPT-like medical Q&A chatbot
-- **Evidence-Based Responses**: Context-aware medical guidance
-- **Patient Education**: Personalized health recommendations
 
 ---
 
