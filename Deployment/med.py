@@ -752,7 +752,7 @@ def main():
                 gender = st.selectbox("Gender *", ["Male", "Female", "Other"])
             with p_col2:
                 last_name = st.text_input("Last Name *")
-                contact = st.text_input("contact *")
+                contact = st.text_input("Patient ID *")
 
             with p_col3:
                 visit_date = datetime.now().strftime("%d-%m-%Y %H:%M")
@@ -861,7 +861,7 @@ def main():
                 "Last Name": last_name,
                 "Gender": gender,
                 "Age": age,
-                "contact": contact,
+                "Patient ID": contact,
                 "Visit Date": visit_date
                 }
 
@@ -998,7 +998,7 @@ def main():
                 gender = st.selectbox("Gender *", ["Male", "Female", "Other"])
             with p_col2:
                 last_name = st.text_input("Last Name *")
-                contact = st.text_input("contact *")
+                contact = st.text_input("Patient ID *")
 
             with p_col3:
                 visit_date = datetime.now().strftime("%d-%m-%Y %H:%M")
@@ -1268,7 +1268,7 @@ def main():
 
             with p_col2:
                 ecg_last_name = st.text_input("Last Name *")
-                ecg_contact = st.text_input("Contact / Patient ID *")
+                ecg_contact = st.text_input(" Patient ID *")
 
             with p_col3:
                 ecg_age = st.number_input(
